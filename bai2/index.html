@@ -1,0 +1,78 @@
+<html  >    
+    <head>
+        <title>bai 2 html </title>
+    </head>
+
+    <body>
+        <h1> Bài 2  </h1>
+        <div>   
+            <!-- Chỉ số trên  -->
+            x<sup>2</sup>
+            <br>
+            <!-- Chỉ số dưới -->
+            H<sub>2</sub>O
+        </div>
+
+        <div>
+            <!-- img ảnh  -->
+            <br>
+            <img src= "../anh/hly.jpg" width="400" height="300" >
+        </div>
+
+        <div>
+            <!-- a liên kết  -->
+            <br>
+            <a href="../bai1/index.html" > Xem bài 1 </a>
+            <br>
+            <a href ="https://daotaodaihoc.humg.edu.vn/#/home" > Trang web HUMG </a>
+        </div>
+
+        <!-- Tạo bảng -->
+        <!-- Định nghĩa bảng table
+        thẻ <tr> dùng để định nghĩa 1 hàng trong bảng
+        thẻ <td> dùng để định nghĩa cột table data
+        thẻ <th> dùng để định nghĩa tiêu đề cột, thường được in đậm và căn giữa
+        Định nghĩa tiêu đề bảng caption-->
+        <br>
+         <table border="1" >
+            <caption> <b> DANH SÁCH SINH VIÊN </b> </caption>
+            <tr>
+                <th> <b> STT </b> </th>
+                <th colspan= "2"> <b> Họ và tên </b> </th>
+                <th> <b> Mã sinh viên </b> </th>
+                <th> <b> Lớp </b> </th>
+                <th> <b> Khoá </b> </th>
+            </tr>
+            
+            <tr>
+                <td> 1 </td>  
+                <td> Đỗ</td>
+                <td> Hương Ly</td>
+                <td> 2421050170</td>
+                <td> DCCTCT69_07</td> 
+                <td> K68 </td>
+            </tr>
+
+            <tr>
+                <td> 2 </td>  
+                <td> Lê Thị </td>
+                <td> Minh Hồng</td>
+                <td> 2421050171</td>
+                <td> DCCTCT69_07</td> 
+                <!-- rowspan="2" dùng để gộp 2 dòng có cùng thông tin, ở đây là khoá K69, nên chỉ cần viết 1 lần ở dòng đầu tiên -->
+                <td rowspan="2"> K69 </td>  
+            </tr>
+
+            <tr>
+                <td> 3 </td>  
+                <td> Nguyễn </td>
+                <td> Phương Ngân</td>
+                <td> 2421050172</td>
+                <td> DCCTCT69_07</td> 
+            </tr>
+         </table>
+
+
+    </body>
+
+</html>
