@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bai 5</title>
+    
+    <style>
+        /* Loại 2: Internal style */
+        h2{
+            /* color dùng  để định nghĩa màu sắc cho chữ, có thể dùng tên màu hoặc mã màu */
+            color: red;
+        }
+
+        #tieuDe{
+            color: orange;
+        }
+    </style>
+       <link rel="stylesheet" href="style.css" type= "text/css">
+</head>
+<body>
+    <!-- I. Kiểu viết style trong HTML -->
+    <!-- Kiểu 1 viết Style trong thẻ head -->
+    <!-- Loại 1: Inline style -->
+    <h1 style="color: blue;">HUMG</h1>
+
+
+    <!-- Kiểu 2: viết Style trong thẻ head -->
+     <h2>Trường đại học Mỏ - Địa chất</h2>
+
+    <!-- Kiểu 3 viết Style trong file css riêng -->
+     <h3>Lớp phát triển ứng dụng web 03</h3>
+
+    <!-- II. Selector -->
+    <!-- cách 1: dùng tên thẻ HTML để định dạng tất cả các thẻ cùng loại -->
+
+    <!-- cách 2: dùng id (Viết dấu # trước tên id) -->
+     <h2 id="tieuDe">Trường đại học Mỏ - Địa chất</h2>
+
+    <!-- cách 3: dùng class (Viết dấu . trước tên class) -->
+     <h2 id="tieuDe" class="tieuDe">Trường đại học Mỏ - Địa chất</h2>
+
+     <h3 class="tieuDe2">Lớp phát triển ứng dụng web 03</h3>
+</body>
+</html>

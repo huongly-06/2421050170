@@ -1,0 +1,17 @@
+/* Loại 3: External */
+h3{ 
+    color: green;
+}
+
+#tieuDe{
+    color: pink;
+}
+
+.tieuDe{
+    /* background-color qui định màu nền */
+    background-color: black;
+}
+
+h3.tieuDe2{
+    background-color: orange;
+}
