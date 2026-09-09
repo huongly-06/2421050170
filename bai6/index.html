@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bai 6</title>
+
+    <style>
+        p{
+            color: yellow;
+        }
+
+        #ten-khoa{
+            color: pink;
+        }
+
+        .ten-mon{
+            color: orange;
+        }
+
+        p.nhom{
+            color: red;
+        }
+
+        .khoi1{
+            background-color: green;
+        }
+
+        .khoi2{
+            background-color: yellow;
+            /* 1 giá trị cách đều xung quanh = giá trị đó */
+            /* 2 giá trị: giá trị đầu ( trên dứoi), giá trị sau (trái, phải) */
+            /* 4 giá trị: theo thứ tự trên phải dưới trái */
+            margin: 50px 200px 10px 100px;
+
+            /* padding xét giá trị bên trong, cũng tương tự như 2 gtri and 4 gtri */
+            padding: 50px;
+        }
+
+        .khoi3{
+            background-color: red;
+        }
+
+        .khoi4{
+            background-color: grey;
+            display: flex;
+        }
+
+        .khoi5{
+            background-color: orange;
+            width: 50%;
+        }
+
+        .khoi6{
+            background-color: blue;
+            width: 50%;
+        }
+    </style>
+</head> 
+<body>
+    <h1 style="color: red;"> Truong Dai hoc Mo dia chat</h1>
+    <p class="nhom"> Nhom 03</p>
+    <p>Truong Dai hoc mo dia chat</p>
+
+    <div id="ten-khoa">Khoa CNTT   </div>
+    <div id="ten-mon">Thiet ke ung dung web</div>
+
+    <div class="khoi1"> Khoi 1</div>
+    <div class="khoi2"> Khoi 2</div>
+    <div class="khoi3"> Khoi 3</div>
+
+    <div class="khoi4">
+        <div class="khoi5"> Khoi 5</div>
+        <div class="khoi6"> Khoi 6</div>
+    </div>
+
+
+</body>
+</html>
