@@ -29,15 +29,18 @@ body{
 
         .trai{
             width: 20%;
-            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
             /* tạo đường viền dùng border
             3 tham số: độ dày, loại đường viền, màu sắc */
-            border-right: 1px solid #198cf0;
+            border-right: 2px solid #2fa4e7;
+            
         }
 
          .khoi-dang-nhap{
             width: 100%;
-            height: 100px;
+            height: auto;
         }
 
         form{
@@ -52,13 +55,18 @@ body{
         }
 
         p{
+            color: #00000080;
             margin: 0;
         }
 
         input{
             width: 100%;
             padding: 5px 0;
-            border-radius: 5px;
+            border: 1px solid #ced4da;
+            font-size: 16px;
+            border-radius: 2px;
+            height: 3vh;
+            
         }
 
         .quen-mat-khau{
@@ -67,34 +75,122 @@ body{
         }
 
         .quen-mat-khau-lien-ket{
+            font-style: italic ;
             color: #198cf0;
             text-decoration: none;
+            padding: 5px;
         }
 
         .login{
             background-color: #1992d7;
             color: white;
+            border-radius: 5px solid #1992d7 ;
+            height: 4vh;
         }
 
         .login-365{
             background-color: #0078d4;
             color: white;
+            border-radius: 5px solid #2fa4e7 ;
+            height: 4vh;
         }
+        
 
         button{
             margin-bottom: 10px;
             width: 100%;
         }
 
+        .khoi-trang-chu {
+            background: white;
+            padding: 12px 15px;
+            margin-top: 10px;
+            border-radius: 6px;
+            border-bottom: 1px solid #2fa4e7;
+            font-family: "Roboto", sans-serif;
+        }
+
+        .link-trang-chu{
+            text-decoration: none;
+            color: #2fa4e7;
+            font-weight: bold;
+            font-size: 16px;
+        }
+
+        .khoi-khao-sat {
+            background: white;
+            padding: 12px 15px;
+            margin-top: 10px;
+            border-radius: 6px;
+            border-bottom: 1px solid #2fa4e7;
+            font-family: "Roboto", sans-serif;
+        }
+
+        .link-khao-sat{
+            text-decoration: none;
+            color: #2fa4e7;
+            font-weight: bold;
+            font-size: 16px;
+        }
+        
+       .chan-trang {
+            margin-top: auto;
+            padding: 15px;
+            font-family: "Roboto", sans-serif;
+            font-size: 13px;
+        }
+            
+        .chan-trang .logo {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            margin-bottom: 8px;
+        }
+
+        .chan-trang .logo img {
+            width: 40px;
+            height: auto;
+        }
+
+        .chan-trang .ten-truong {
+            font-weight: bold;
+            color: #0b4578;
+            font-size: 12px;
+            margin: 0;
+        }
+
+        .chan-trang .cong-tt {
+            color: #555;
+            font-size: 11px;
+            margin: 0;
+        }
+
+        .chan-trang .phien-ban {
+            color: #666;
+            margin: 5px 0;
+        }
+
+        .chan-trang .tac-gia {
+            color: #666;
+            margin: 0;
+        }
+
+        .chan-trang .tac-gia a {
+            color: #198cf0;
+            text-decoration: none;
+        }
         .phai{
             width: 80%;
         }
 
+        .danh-sach-tin{
+            height: fit-content;
+        }
+
         .tin{
             width: 95%;
-            height: 100px;
             margin: 20px auto;
-            border: 1px solid #198cf0;
+            border: 1px solid #2fa4e7;
             border-radius: 10px;
         }
 
@@ -104,10 +200,10 @@ body{
             padding: 5px;
             display: flex;
             justify-content: space-between;
-            border-bottom: 1PX solid #198cf0;
+            border-bottom: 1PX solid #2fa4e7;
         }
 
-        .tieu-de{
+        .chuc-nang .tieu-de{
             font-weight: bold;
             font-family: "Roboto", sans-serif;
             text-decoration: none;
@@ -115,6 +211,99 @@ body{
 
         .xem-tiep{
             color: #198cf0;
-            font-family: "Roboto", sans-serif
+            /* font-family: "Roboto", sans-serif */
             text-decoration: none;
         }
+
+        .danh-sach-bai{
+            display: flex;
+            justify-content: space-between;
+            padding: 15px;
+        }
+
+        .chi-tiet-bai{
+            width: 23%;
+            display: flex;
+            flex-direction: column;
+            /* xếp các ptu bên trong theo chiều dọc */
+            /* background-color: #198cf0; */
+        }
+
+        .anh-bai{
+            border-radius: 10px;
+            height: 20vh;
+            object-fit: cover;
+        }
+
+        .ngay-dang{
+            width: 100%;
+            text-align: right;
+            color: #868e96;
+            margin: 5px;
+            /* padding-right: 0; */
+        }
+
+        .ds-thong-bao .ngay-dang{
+            text-align: right;
+            color: #868e96;
+            padding-left: 70px;
+            padding-right: 50px;
+        }
+
+        .chi-tiet-bai .tieu-de {      
+            color: #495507;
+            text-decoration: none;
+            /* padding-right: 50px ; */
+            text-align: justify;
+            
+        }
+
+        .tbao .tieu-de {      
+            color: black;
+            text-decoration: none;
+            padding-right: 10px ;
+            text-align: left
+            
+        }
+
+        .noi-dung-tbao{
+            display: flex;
+            justify-content: space-between;
+            gap: 20px;
+        }
+        .anh-thong-bao .chi-tiet-bai{
+            width: 40%;
+            margin: 20px;
+            /* padding-bottom: 10px; */
+        }
+        .anh-thong-bao{
+            width: 60%;
+            display: flex;
+            gap: 10px;
+            border-right: 1px solid #868e96;
+            
+        }
+
+        .ds-thong-bao{
+             width: 50%;
+        }
+
+        .ds-thong-bao .tbao{
+            padding-left: 20px;
+            justify-content: space-between;
+        }
+        .ds-thong-bao .tbao li {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start; 
+            /* căn lề trên */
+            padding: 15px 10px;
+            border-bottom: 1px solid #868e96;
+        }
+
+        .danh-sach-bai .anh-qr{
+            width: 150px;
+            height: auto;
+        }
+
+
