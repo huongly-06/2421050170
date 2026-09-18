@@ -304,6 +304,10 @@ body{
         .danh-sach-bai .anh-qr{
             width: 150px;
             height: auto;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 30px;
         }
 
 
