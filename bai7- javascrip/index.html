@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript - 1</title>
+</head>
+<body>
+    <!-- Internal JavaScript -->
+    <script>
+        // In ra màn hình
+        document.writeln('Hello world <br>');
+
+        // khai báo biến
+        var name= 'Huong Ly <br>';
+        document.writeln(name);
+
+        // // Thay doi gtri cua bien
+        // name='Hong <br>';
+        // document.writeln(name);
+
+        var year = 2026;
+        document.writeln(year);
+
+        //Phép toán
+        var soThuNhat = 10;
+        var soThuHai = 5;
+        var ketQua = 0;
+        // Cộng +
+        document.writeln(' <br> Ket qua soThu1 + soThu2 la:')
+        ketQua = soThuNhat + soThuHai;
+        document.writeln(ketQua);
+
+        // Tru -
+        document.writeln(' <br> Ket qua soThu1 - soThu2 la:')
+        ketQua = soThuNhat - soThuHai;
+        document.writeln(ketQua);
+
+        // Nhan 8
+        document.writeln(' <br> Ket qua soThu1 * soThu2 la:')
+        ketQua = soThuNhat * soThuHai;
+        document.writeln(ketQua);
+
+        // Chia /
+        document.writeln(' <br> Ket qua soThu1 / soThu2 la:')
+        ketQua = soThuNhat / soThuHai;
+        document.writeln(ketQua);
+
+        // Chia lay du %
+        document.writeln(' <br> Ket qua soThu1 % soThu2 la:')
+        ketQua = soThuNhat % soThuHai;
+        document.writeln(ketQua);
+
+        // //++
+        // document.writeln('<br>');
+        // document.writeln(soThuNhat++);
+        // document.writeln('<br>');
+        // document.writeln(soThuNhat);
+
+        // //--
+        // document.writeln('<br>');
+        // document.writeln(--soThuHai);
+
+        //+=
+        document.writeln('<br>');
+        soThuNhat += soThuHai;
+        document.writeln(soThuNhat);
+
+        //-=
+        document.writeln('<br>');
+        soThuNhat -= soThuHai;
+        document.writeln(soThuNhat);
+
+        var ho = 'Do';
+        document.writeln( "<br>" + ho+ " "+name);
+        // Kiem tra do dai chuoi
+        document.writeln('Do dai cua chuoi la: ');
+        document.writeln(ho.length);
+
+        //Kiem tra kieu cua bien
+        document.writeln('<br>');
+        document.writeln('Kieu DL cua bien:')
+        document.writeln(typeof(ho));
+        document.writeln('<br>');
+
+        //Tim vi tri xhien trong chuoi
+        var hoVaTen = 'Do Huong Ly';
+        document.writeln(hoVaTen.indexOf('Huong'));
+        document.writeln('<br>');
+        document.writeln(hoVaTen.includes(hoVaTen));
+
+        //Tim kiem chuoi co bat dau = tu
+        document.writeln('<br>');
+        document.writeln(hoVaTen.startsWith('Do'));
+
+        //Replace
+        document.writeln('<br>');
+        document.writeln(hoVaTen.replace('Do', 'Nguyen'))
+
+        //Upper, Lower
+        document.writeln('<br>');
+        document.writeln(hoVaTen.toLowerCase())
+
+        document.writeln('<br>');
+        document.writeln(hoVaTen.toUpperCase())
+    </script>
+
+    <!-- External JavaScript -->
+     <!-- Đặt cuối thẻ body or trong thẻ head -->
+    <script src="script.js"></script>
+</body>
+</html>
