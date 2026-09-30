@@ -103,6 +103,132 @@
 
         document.writeln('<br>');
         document.writeln(hoVaTen.toUpperCase())
+
+        //Date
+        var homNay = new Date ();
+        document.writeln('<br>');
+        document.writeln(homNay);
+
+        var Ngay = new Date("8/6/2025");
+        document.writeln('<br>');
+        document.writeln(Ngay);
+
+        var namNay = homNay.getFullYear();
+        document.writeln('<br>');
+        document.writeln(namNay);
+
+        var thangNay = homNay.getMonth() + 1;
+        document.writeln('<br>');
+        document.writeln(thangNay);
+
+        var ngayHomNay = homNay.getDate()
+        document.writeln('<br>');
+        document.writeln(ngayHomNay);
+
+        var thuNay = homNay.getDay() + 1;
+        document.writeln('<br>');
+        document.writeln(thuNay);
+
+        document.writeln('<br>');
+        document.writeln('Hôm nay là thứ ' + thuNay + '  Ngày ' + ngayHomNay + '  Tháng ' + thangNay + '  Năm ' + namNay)
+
+        var mangSo = [1, 2, 3, 4, 5];
+        document.writeln('<br>');
+        document.writeln(mangSo[2]);
+        document.writeln('<br>');
+        document.writeln('Độ dài của mảng: ' ,mangSo.length);
+
+        var mangChu = ['Hly', 'Hong', 'Ngan']
+        document.writeln('<br>');
+        document.writeln(mangChu[2])
+
+        document.writeln('<br>');
+        var mang = [1, 2, 3, 4, 5, 'Hly', 'Hong', 'Ngan']
+        document.writeln(mang[5])
+
+        var d = mang.concat(mangSo, mangChu);
+        document.writeln('<br>');
+        document.writeln(d);
+
+        document.writeln('<br>');
+        document.writeln(d.join('-'));
+
+        document.writeln('<br>');
+        document.writeln('Phần tử cuối cùng trong mảng: ', d.pop());
+
+        //Them ptu
+        d.push('Ly');
+        document.writeln('<br>');
+        document.writeln(d);
+
+        //Dao nguoc ptu trong mang
+        document.writeln('<br>');
+        document.writeln(mangSo.reverse());
+
+        //Object
+        var thongTinSinhVien = {
+            ten: 'Do Huong Ly',
+            namSinh: 2006,
+            queQuan: {
+                thanhPho: 'Ha Noi',
+                xa: 'Phuc Thinh'
+            }
+        };
+        document.writeln('<br>');
+        document.writeln(thongTinSinhVien.ten);
+        document.writeln('<br>');
+        document.writeln(thongTinSinhVien.queQuan.thanhPho);
+
+        tuoi = namNay - thongTinSinhVien.namSinh;
+        document.writeln('<br>');
+        document.writeln(tuoi);
+        thongTinSinhVien.tuoi = tuoi;
+
+        //console.log(thongTinSinhVien);
+
+        //boolean: true: nam, false: nu
+        thongTinSinhVien.gioiTinh = true;
+
+       var danhSach = [
+            {
+                ten: 'Do Huong Ly',
+                namSinh: 2006,
+                queQuan: {
+                    thanhPho: 'Ha Noi',
+                    xa: 'Phuc Thinh'
+                }
+            }, 
+            {
+                ten: 'Minh Hong',
+                namSinh: 2006,
+                queQuan: {
+                    thanhPho: 'Ha Nam',
+                    xa: 'Phuc Thinh'
+                }
+            }
+        ];
+
+        var so1 = 5;
+        var so2 = 10;
+        document.writeln('<br>');
+        document.writeln( so1 == so2)
+
+        document.writeln('<br>');
+        if(thuNay > 6){
+            document.writeln('Cuoi tuan');
+        }else if(thuNay == 6){
+            document.writeln('Sap dc nghi');
+        }else{
+            document.writeln('Di hoc');
+        }
+
+        document.writeln('<br>');
+        var so = 7;
+        if( so%2 ==0){
+            document.writeln(so, ' la so chan')
+        }
+        document.writeln(so, ' la so le')
+
     </script>
 
     <!-- External JavaScript -->
