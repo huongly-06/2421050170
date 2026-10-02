@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS - 2</title>
+</head>
+<body>
+    <script>
+        //function
+        //khong co tham so
+        function sayHello(){
+            document.writeln("Hello");
+        }
+
+        sayHello();
+
+        // co tham so
+        function sayHello2(ten){
+            document.writeln("<br>")
+            document.write("Xin chao ban " +ten);
+        }
+        sayHello2("Huong Ly");
+        sayHello2("Minh Hong");
+
+        //Nhap vao 2 so bat ki su dung popup boxes, ket hop vs ham tinh tong 2 so, khi nhap vao ktra co p kieu so k
+        document.writeln("<br>")
+        function tinhTong(so1, so2){
+            so1 = Number(so1);
+            so2 = Number(so2);
+            if (isNaN(so1) == false && isNaN(so2) == false ){
+                document.write("Tong 2 so la: " + (so1+so2))
+            }
+        }
+        var so1 = prompt("Nhap vao so thu nhat", "Nhap o day");
+        var so2 = prompt("Nhap vao so thu hai", "Nhap o day");
+
+        tinhTong(so1, so2);
+      
+    </script>
+</body>
+</html>
