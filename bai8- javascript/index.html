@@ -6,37 +6,134 @@
     <title>JS - 2</title>
 </head>
 <body>
+    <div>
+        Nhập điểm A: <input id="diemA" type="number">
+    </div>
+    <div>
+        Nhập điểm B: <input id="diemB" type="number">
+    </div>
+    <div>
+        Nhập điểm C: <input id="diemC" type="number">
+    </div>
+    <div>
+        <button onclick="tinhDiem()">Tính điểm</button>
+    </div>
+    <div>
+        Kết quả: <input id="ketQua" type="text">
+    </div>
+
+    <div>
+        Nhập năm sinh: <input id="namSinh" type="number">
+    </div>
+    <div>
+        <button onclick="tinhTuoi()">Tính tuổi</button>
+    </div>
+    <div>
+        Ket qua: <input id="kqtuoi" type="text">
+    </div>
+
     <script>
-        //function
-        //khong co tham so
-        function sayHello(){
-            document.writeln("Hello");
+        // //function
+        // //khong co tham so
+        // function sayHello(){
+        //     document.writeln("Hello");
+        // }
+
+        // sayHello();
+
+        // // co tham so
+        // function sayHello2(ten){
+        //     document.writeln("<br>")
+        //     document.write("Xin chao ban " +ten);
+        // }
+        // sayHello2("Huong Ly");
+        // sayHello2("Minh Hong");
+
+        // //Nhap vao 2 so bat ki su dung popup boxes, ket hop vs ham tinh tong 2 so, khi nhap vao ktra co p kieu so k
+        // document.writeln("<br>")
+        // function tinhTong(so1, so2){
+        //     so1 = Number(so1);
+        //     so2 = Number(so2);
+        //     if (isNaN(so1) == false && isNaN(so2) == false ){
+        //         document.write("Tong 2 so la: " + (so1+so2))
+        //     }
+        // }
+        // var so1 = prompt("Nhap vao so thu nhat", "Nhap o day");
+        // var so2 = prompt("Nhap vao so thu hai", "Nhap o day");
+
+        // tinhTong(so1, so2);
+
+        //BTVN
+        //Viet ham tinh diem chu dua tren 3 dau diem A,B,C
+        // Tong= A* 0.6 + B*0.3 + C*0.1 => diem chu tuong ung 
+        // Hàm tính điểm tổng kết và quy đổi ra điểm chữ
+        function tinhDiem(){
+            var a= parseFloat(document.getElementById("diemA").value);
+            var b= parseFloat(document.getElementById("diemB").value);
+            var c= parseFloat(document.getElementById("diemC").value);
+            
+            document.getElementById("ketQua").value = tinhDiemChu(a,b,c);
+
+        //     document.write("Điểm A nhập vào là :" +a)
+        //     document.write("<br>Điểm B nhập vào là :" +b)
+        //     document.write("<br>Điểm C nhập vào là :" +c)
         }
 
-        sayHello();
-
-        // co tham so
-        function sayHello2(ten){
-            document.writeln("<br>")
-            document.write("Xin chao ban " +ten);
-        }
-        sayHello2("Huong Ly");
-        sayHello2("Minh Hong");
-
-        //Nhap vao 2 so bat ki su dung popup boxes, ket hop vs ham tinh tong 2 so, khi nhap vao ktra co p kieu so k
-        document.writeln("<br>")
-        function tinhTong(so1, so2){
-            so1 = Number(so1);
-            so2 = Number(so2);
-            if (isNaN(so1) == false && isNaN(so2) == false ){
-                document.write("Tong 2 so la: " + (so1+so2))
+        function tinhDiemChu(a,b,c) {
+            var tongDiem = (a * 0.6) + (b * 0.3) + (c * 0.1);
+            
+            var kq = "";
+            
+            if (tongDiem >= 9) {
+                kq = "A+";
+            } else if (tongDiem >= 8.5) {
+                kq = "A";
+            } else if (tongDiem >= 8.0) {
+                kq = "B+";
+            } else if (tongDiem >= 7.0) {
+                kq = "B";
+            } else if (tongDiem >= 6.5) {
+                kq = "C+";
+            } else if (tongDiem >= 5.5) {
+                kq = "C";
+            } else if (tongDiem >= 5.0) {
+                kq = "D+";
+            } else if (tongDiem >= 4.0) {
+                kq = "D";
+            } else if (tongDiem<4) {
+                kq = "F";
+            }else{
+                kq= "Diem ko hop le!";
             }
-        }
-        var so1 = prompt("Nhap vao so thu nhat", "Nhap o day");
-        var so2 = prompt("Nhap vao so thu hai", "Nhap o day");
+            return kq;
 
-        tinhTong(so1, so2);
-      
+            document.writeln("<br>Điểm tổng kết: " + tongDiem)
+            document.writeln("<br>Điểm chữ: " + diemChu)
+        }
+
+        // var diemA= Number(prompt("Nhap diem A"))
+        // var diemB= Number(prompt("Nhap diem B"))
+        // var diemC= Number(prompt("Nhap diem C"))
+        
+        // tinhDiemChu(diemA, diemB, diemC);
+
+        // Chuyển chuỗi thành số
+        // parseInt()
+        // parseFloat()
+        
+        // events
+
+
+        //Nhap vao nam sinh in ra tuoi
+        function tinhTuoi(){
+            var namSinh= parseInt(document.getElementById("namSinh").value);
+            var namNay= new Date().getFullYear();
+            var tuoi= namNay - namSinh;
+
+            document.getElementById("kqtuoi").value = tuoi +" tuoi" ;
+        }
+
+        
     </script>
 </body>
 </html>
