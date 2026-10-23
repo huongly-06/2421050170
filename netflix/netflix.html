@@ -35,8 +35,18 @@
     </header>
 
     <main>
-        <div class="banner">
+        <!-- Banner -->
+        <div onclick="xemTrailer()" class="banner">
             <img class="banner-anh" src="./anh/banner.jpg" alt="">
+        </div>
+        <!-- Trailer -->
+        <div style="display: none;" class="banner">
+            <iframe class="banner-anh" src="https://www.youtube.com/embed/nm1hA18q_Ws?si=yJH8wNecgB1vbxml" 
+            title="YouTube video player" 
+            frameborder="0" 
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+            referrerpolicy="strict-origin-when-cross-origin" 
+            allowfullscreen></iframe>
         </div>
         <div class="danh-sach-the-loai">
             <div class="the-loai">
@@ -130,5 +140,13 @@
             </div>
         </div>
     </main>
+    <script>
+        function xemTrailer(){
+            //An banner
+            document.getElementsByClassName("banner")[0].style = "display: none";
+            //Hien trailer
+            document.getElementsByClassName("banner")[1].style = "display: block";
+        }
+    </script>
 </body>
 </html>

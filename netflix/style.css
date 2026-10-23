@@ -64,7 +64,7 @@ header{
 
 .banner{
     background-color: white;
-    width: 95%;
+    width: 90%;
     /* height: 20vh; */
     margin: 20px auto;
     border-radius: 20px;
@@ -72,6 +72,7 @@ header{
 
 .banner-anh{
     width: 100%;
+    height: 500px;
     border-radius: 20px;
 }
 
