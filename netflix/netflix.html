@@ -38,16 +38,14 @@
         <!-- Banner -->
         <div onclick="xemTrailer()" class="banner">
             <img class="banner-anh" src="./anh/banner.jpg" alt="">
-        </div>
-        <!-- Trailer -->
-        <div style="display: none;" class="banner">
-            <iframe class="banner-anh" src="https://www.youtube.com/embed/nm1hA18q_Ws?si=yJH8wNecgB1vbxml" 
+                  <iframe style="display: none;" class="banner-anh" src="https://www.youtube.com/embed/nm1hA18q_Ws?si=yJH8wNecgB1vbxml" 
             title="YouTube video player" 
             frameborder="0" 
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
             referrerpolicy="strict-origin-when-cross-origin" 
             allowfullscreen></iframe>
         </div>
+   
         <div class="danh-sach-the-loai">
             <div class="the-loai">
                 <div class="ten-the-loai">
@@ -55,8 +53,8 @@
                 </div>
                 <div class="danh-sach-phim">
                     <div class="phim">
-                        <img src="./anh/phim1.jpg" class="phim-poster"></img>
-                        <img src="./anh/phim2.jpg" class="phim-poster"></img>
+                        <img  src="./anh/phim1.jpg" class="phim-poster"></img>
+                        <img onclick="chonPhim(1)" src="./anh/phim2.jpg" class="phim-poster"></img>
                         <img src="./anh/phim3.jpg" class="phim-poster"></img>
                         <img src="./anh/phim4.jpg" class="phim-poster"></img>
                     </div>
@@ -67,8 +65,8 @@
                 </div>
                 <div class="danh-sach-phim">
                     <div class="phim">
-                        <img src="./anh/haihuoc1.jpg" class="phim-poster"></img>
-                        <img src="./anh/haihuoc2.jpg" class="phim-poster"></img>
+                        <img onclick="chonPhim(1)" src="./anh/haihuoc1.jpg" class="phim-poster"></img>
+                        <img onclick="chonPhim(2)" src="./anh/haihuoc2.jpg" class="phim-poster"></img>
                         <img src="./anh/haihuoc3.jpg" class="phim-poster"></img>
                         <img src="./anh/haihuoc4.jpg" class="phim-poster"></img>
                     </div>
@@ -140,13 +138,8 @@
             </div>
         </div>
     </main>
-    <script>
-        function xemTrailer(){
-            //An banner
-            document.getElementsByClassName("banner")[0].style = "display: none";
-            //Hien trailer
-            document.getElementsByClassName("banner")[1].style = "display: block";
-        }
+    <script src="script.js">
+        
     </script>
 </body>
 </html>
