@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .video{
+            margin: auto;
+            display: flex;
+        }
+        .danh-sach{
+            width: 80%;
+            display: flex;
+            margin: 50px auto;
+            justify-content: space-between;
+        }
+        .anh{
+            width: 24%;
+            height: 100px;
+            img{
+                width: 100%;
+            }
+        }
+        .ten{
+            display: flex;
+            justify-content: center;
+        }
+    </style>
+</head>
+<body>
+    <!-- màn xem -->
+    <iframe class="video" width="560" height="315" src="https://www.youtube.com/embed/INJuqE_34eQ?si=cCfuCF1VsrWTUWjH" 
+    title="YouTube video player" 
+    frameborder="0" 
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+    referrerpolicy="strict-origin-when-cross-origin" 
+    allowfullscreen></iframe>
+    <h3 class="ten">3 PHẢI 6 ĐỪNG - Quân A.P (Official MV)</h3>
+  
+
+     <div class="danh-sach">
+        <div class="anh" onclick="chonVideo(1)">
+            <img src="./anh/bông hoa đẹp nhất.jpg" alt="">
+            <p>QUÂN A.P | BÔNG HOA ĐẸP NHẤT | OFFICIAL MUSIC VIDEO</p>
+        </div>
+        <div class="anh" onclick="chonVideo(2)">
+            <img src="./anh/lạ lùng.webp" alt="">
+            <p>LẠ LÙNG / Vũ. (Original)</p>
+        </div>
+        <div class="anh" onclick="chonVideo(3)">
+            <img src="./anh/những lời hứa bỏ quên.jpg" alt="">
+            <p>NHỮNG LỜI HỨA BỎ QUÊN / VŨ. x DEAR JANE (Official MV) từ Album "Bảo Tàng Của Nuối Tiếc</p>
+        </div>
+        <div class="anh" onclick="chonVideo(4)">
+            <img src="./anh/nếu những tiếc nuối.jpg" alt="">
+            <p>Nếu Những Tiếc Nuối / Vũ. (Official MV) từ Album "Bảo Tàng Của Nuối Tiếc</p>
+        </div>
+     </div>
+     <script>
+        var danhSachVid =[
+            {
+                id: 1,
+                ten: "QUÂN A.P | BÔNG HOA ĐẸP NHẤT | OFFICIAL MUSIC VIDEO",
+                duongDanAnh: "./anh/bông hoa đẹp nhất.jpg",
+                duongDanYuotube: "https://www.youtube.com/embed/fTXd-DpN3AI?si=p-Bb92aKVbfMrA6s"
+            },
+            {
+                id: 2,
+                ten: "LẠ LÙNG / Vũ. (Original)",
+                duongDanAnh: "./anh/lạ lùng.webp",
+                duongDanYuotube: "https://www.youtube.com/embed/F5tS5m86bOI?si=fJ7OEkIZ-k1dqSwk"
+            },
+            {
+                id: 3,
+                ten: "NHỮNG LỜI HỨA BỎ QUÊN ",
+                duongDanAnh: "./anh/những lời hứa bỏ quên.jpg",
+                duongDanYuotube: "https://www.youtube.com/embed/h6RONxjPBf4?si=eD9zgKJRDxSm62Hx"
+            },
+            {
+                id: 4,
+                ten: "Nếu Những Tiếc Nuối ",
+                duongDanAnh: "./anh/nếu những tiếc nuối.jpg",
+                duongDanYuotube: "https://www.youtube.com/embed/e5Td3zrVdX4?si=WmIqo2HqMCig21-2"
+            }
+        ];
+
+        function chonVideo(id){
+            for(let i =0; i<danhSachVid.length; i++){
+                if(danhSachVid[i].id == id){
+                    document.getElementsByClassName("ten")[0].innerHTML= danhSachVid[i].ten;
+                    document.getElementsByTagName("iframe")[0].src = danhSachVid[i].duongDanYuotube;
+                }
+            }
+        }
+
+     </script>
+</body>
+</html>

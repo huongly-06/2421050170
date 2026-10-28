@@ -1,10 +1,10 @@
 var danhSachPhim = [
     {
         id: 1,
-        ten: "Cảnh sát trưởng Labrado",
+        ten: "Minions",
         thoiLuong: 20,
         banner: "./anh/haihuoc1.jpg",
-        trailer: "https://www.youtube.com/embed/wCkerYMffMo?si=MYGPicMs-xqiGA-0"
+        trailer: "https://www.youtube.com/embed/fYmW3bzifxY?si=IQkUHQ-SbCjgjlAj"
     },
     {
         id: 2,
