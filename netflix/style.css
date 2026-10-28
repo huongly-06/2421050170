@@ -85,7 +85,8 @@ header{
 .phim{
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    /* align-items: center; */
+
 }
 
 .phim img{
@@ -93,7 +94,7 @@ header{
 }
 
 .phim-poster{
-    width: 25%;
+    width: 18%;
     height: 20vh;
     border-radius: 15px;
     margin: 10px;
