@@ -57,6 +57,12 @@
                 case 'themtaikhoan':
                     include 'themtaikhoan.php';
                     break;
+                case 'capnhattaikhoan':
+                    include 'capnhattaikhoan.php';
+                    break;
+                case 'xoataikhoan':
+                    include 'xoataikhoanx.php';
+                    break;
             
             }
         }
