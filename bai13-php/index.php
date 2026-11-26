@@ -35,6 +35,7 @@
                     <li><a href="index.php?page_layout=taikhoan">Tài khoản</a></li>
                     <li><a href="index.php?page_layout=danhmuc">Danh mục</a></li>
                     <li><a href="index.php?page_layout=phim">Phim</a></li>
+                    <li><a href="index.php?page_layout=daodien">Đạo diễn</a></li>
                 </ul>
             </nav>
     </header>
@@ -61,7 +62,37 @@
                     include 'capnhattaikhoan.php';
                     break;
                 case 'xoataikhoan':
-                    include 'xoataikhoanx.php';
+                    include 'xoataikhoan.php';
+                    break;
+                case 'themdanhmuc':
+                    include 'themdanhmuc.php';
+                    break;
+                case 'capnhatdanhmuc':
+                    include 'capnhatdanhmuc.php';
+                    break;
+                case 'xoadanhmuc':
+                    include 'xoadanhmuc.php';
+                    break;
+                case 'themphim':
+                    include 'themphim.php';
+                    break;
+                case 'capnhatphim':
+                    include 'capnhatphim.php';
+                    break;
+                case 'xoaphim':
+                    include 'xoaphim.php';
+                    break;
+                case 'daodien':
+                    include 'daodien.php';
+                    break;
+                case 'themdaodien':
+                    include 'themdaodien.php';
+                    break;
+                case 'capnhatdaodien':
+                    include 'capnhatdaodien.php';
+                    break;
+                case 'xoadaodien':
+                    include 'xoadaodien.php';
                     break;
             
             }
