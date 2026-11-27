@@ -31,7 +31,9 @@
             border-radius: 5px;
             background-color: red;
         }
-        
+        img{
+            width: 200px;
+        }
     </style>
 </head>
 <body>
@@ -82,7 +84,9 @@
                 <td><?php echo $row['do_tuoi']?></td>
                 <td><?php echo $row['mo_ta']?></td>
                 <td><?php echo $row['trailer']?></td>
-                <td><?php echo $row['poster']?></td>
+                <td>
+                    <img src="<?php echo $row['poster']?>" >
+                </td>
                 <td>
                     <a class="capnhat" href="index.php?page_layout=capnhatphim&id=<?php echo $row['id']?>">Cập nhật</a>
                     <a class="xoa" href="index.php?page_layout=xoaphim&id=<?php echo $row['id']?>">Xóa</a>

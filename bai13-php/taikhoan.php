@@ -5,29 +5,31 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-        table{
-            width: 100%;
-            /* border-collapse: collapse;  */
-            margin-top: 15px; 
-        }
-        tr,th,td{
-            border: 1px solid black;
-            padding: 8px; 
-        }
         .btn-add{
-            display: block; 
-            width: 150px; 
-            background-color: green;
+            display: block;
+            width: 120px;
+            background-color: pink;
             color: white;
-            padding: 10px 15px;
-            text-decoration: none;
+            padding: 10px 15px;;
+            margin-bottom: 20px;
             border-radius: 5px;
-            margin-bottom: 20px; 
+            text-decoration: none;
+        }
+        table{
+            width: auto;
+            margin-top: 15px;
+        }
+        tr, th, td{
+            border: 1px solid black;
+            padding: 8px;
         }
         .capnhat{
+            width: 100%;
+            border-radius: 5px;
             background-color: green;
         }
         .xoa{
+            border-radius: 5px;
             background-color: red;
         }
     </style>
